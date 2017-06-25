@@ -1,0 +1,297 @@
+;メッセージ表示
+[showmessage]
+
+;共通ライブラリ
+;セーブ・ロードバックログなど基本的な機能を取り込む
+;[call file=wide/system target="*system_setting_buttons"]
+
+;ゲーム作成で便利なマクロ集
+[call file=wide/libs/utils]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"]
+
+;キャラクターの宣言
+[chara_new name="kohaku" jname="大鳥こはく" jcolor="#8697A7" storage="portrait_kohaku_B_01" scale="0.4" y="-2"]
+[chara_face name="kohaku" face="serious" storage="portrait_kohaku_B_03"]
+[chara_face name="kohaku" face="surprised" storage="portrait_kohaku_B_04"]
+[chara_face name="kohaku" face="shock" storage="portrait_kohaku_B_06"]
+
+[chara_new name="yuko" jname="神林ゆうこ" jcolor="#8E9B90" storage="portrait_yuko_B_01" scale="0.4" x="-2" y="-2"]
+[chara_face name="yuko" face="worried" storage="portrait_yuko_B_05"]
+
+[chara_new name="misaki" jname="藤原みさき" jcolor="#A38D8D" storage="portrait_misaki_B_01" scale="0.4" x="2" y="-2"]
+[chara_face name="misaki" face="worried" storage="portrait_misaki_B_05"]
+
+;背景の宣言
+[bg_new storage="forest"]
+
+
+;背景 表示
+[bg_show]
+
+;BGM 再生
+[playbgm storage="game_maoudamashii_6_dangeon20"]
+
+……[p]
+
+;こはく 表示
+[show name="kohaku"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+ゆうこちゃん、みさきちゃん！[r]
+2人とも大丈夫！？[p]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;ゆうこ 表示
+[show name="yuko"]
+
+;名前 表示
+[talk_name val="yuko"]
+
+へ、平気。[p]
+
+[wait time="0.5"]
+
+;みさき 表示
+[show name="misaki"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+私も、大丈夫です。[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;こはく 表示
+[show name="kohaku"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+……よ、よかった。[p]
+
+そ、そうだ……！[r]
+はやく！はやく山を出なきゃ……っ！[p]
+
+[wait time="1"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;名前 表示
+[talk_name val=""]
+
+;BGM 停止
+[stopbgm]
+
+;背景 非表示
+[bg_hide]
+
+…[r]
+
+[wait time="0.5"]
+
+……[r]
+
+[wait time="0.5"]
+
+………[p]
+
+;背景の宣言
+[bg_new storage="room"]
+
+;背景 表示
+[bg_show]
+
+;BGM 再生
+[playbgm storage="bgm_maoudamashii_acoustic31" vol="0.5"]
+
+[wait time="1"]
+
+;こはく 表示
+[show name="kohaku"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+ここまで来たら……[r]
+もう、平気……かな？[p]
+
+……や、やっと[r]
+やっと帰ってこれた……私たちの街に。[p]
+
+ゆうこちゃんとみさきちゃん、[r]
+二人とも無事で、本当に良かった……っ！[p]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;ゆうこ 表示
+[show name="yuko" x="0"]
+
+;名前 表示
+[talk_name val="yuko"]
+
+ごめんね、私……[r]
+2人に迷惑かけちゃって、本当ごめんね。[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+私こそ、すみません。[r]
+足を怪我したばかりに、足手まといになってしまって。[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;こはく 表示
+[show name="kohaku"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+ふふふ。[r]
+2人の顔を見たら、安心しちゃった！[p]
+
+……でも、私たちに襲い掛かってきたアイツ。[r]
+あれはいったい、何だったんだろう……？[p]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;ゆうこ 表示
+[show name="yuko" x="0"]
+
+;名前 表示
+[talk_name val="yuko"]
+
+わ、私……霧の中で、[r]
+突然アイツに追いかけられて。[p]
+
+怖くてひたすら逃げていたら、[r]
+気付いた時には、山深いところまで入ってしまって……[p]
+
+物陰で息をひそめていたら、[r]
+いつの間にか日が暮れて、不安で震えてた。[p]
+
+でも、こはくちゃんが探しに来てくれて。[r]
+私、あのまま帰れないかもって……とっても怖かった。[l][r]
+だから、本当にありがとう！[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+……そうだったんですね。[r]
+私は幸運にも、彼に見つかる事無く、やり過ごせたようです。[p]
+
+[wait time="0.5"]
+
+………[r]
+もしかして……！？[p]
+
+[wait time="1"]
+
+彼の正体は、古くからあの山に言い伝えられている……[l][r]
+『女子高生大好きおじさん』なのかもしれません……っ！[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;こはく 表示
+[show name="kohaku" x="-2.5"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+え！？[p]
+
+;ゆうこ 表示
+[show name="yuko" x="2.5"]
+
+;名前 表示
+[talk_name val="yuko"]
+
+じょ、女子高生……大好きおじさん？？[p]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+はい。[r]
+正確には、『幼女大好きおじさん』です。[p]
+
+はるか昔、幼女への関心が高すぎる悩みを抱えた男性が、[r]
+煩悩を捨てるため、人里を離れ山奥で修練に励んだそうです。[p]
+
+しかし、幼女への想いは日に日に増大していき、[r]
+死しても強い怨念として、山中にとどまり続けた結果……[p]
+
+怨念は実体を宿すようになり、[r]
+山に入る若い女性を手あたり次第、襲い掛かるようになった。[l][r]
+……と、聞いたことがあります。[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;こはく 表示
+[show name="kohaku" x="0"]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+……そ、そうなんだ。[p]
+
+でも、そう考えると……[r]
+
+[select_new text="実は、未練を抱えた悲しい存在なのかも" target="*select_1"]
+[select_new text="おぞましい、1日も早く祓ってほしい" target="*select_2"]
+[select_new text="なんで、みさきちゃんは狙われなかったの？" target="*select_3"]
+
+[select_show sound="click"]
+
+[s]
+
+*select_1
+実は、未練を抱えた悲しい存在なのかも。[p]
+@jump file="wide/ending_1" target="*select_1"
+
+*select_2
+おぞましい、1日も早く祓ってほしい。[p]
+@jump file="wide/ending_2" target="*select_2"
+
+*select_3
+なんで、みさきちゃんは狙われなかったの？[p]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+@jump file="wide/ending_3" target="*select_3"
+

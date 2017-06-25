@@ -1,0 +1,147 @@
+;メッセージ表示
+[showmessage]
+
+;共通ライブラリ
+;セーブ・ロードバックログなど基本的な機能を取り込む
+;[call file=wide/system target="*system_setting_buttons"]
+
+;ゲーム作成で便利なマクロ集
+[call file=wide/libs/utils]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"]
+
+;キャラクターの宣言
+[chara_new name="kohaku" jname="大鳥こはく" jcolor="#8697A7" storage="portrait_kohaku_B_01" scale="0.4" y="-2"]
+[chara_face name="kohaku" face="serious" storage="portrait_kohaku_B_03"]
+[chara_face name="kohaku" face="surprised" storage="portrait_kohaku_B_04"]
+[chara_face name="kohaku" face="shock" storage="portrait_kohaku_B_06"]
+
+[chara_new name="yuko" jname="神林ゆうこ" jcolor="#8E9B90" storage="portrait_yuko_B_01" scale="0.4" y="-2"]
+[chara_face name="yuko" face="worried" storage="portrait_yuko_B_05"]
+
+[chara_new name="misaki" jname="藤原みさき" jcolor="#A38D8D" storage="portrait_misaki_B_01" scale="0.4" y="-2"]
+[chara_face name="misaki" face="worried" storage="portrait_misaki_B_05"]
+
+;背景の宣言
+[bg_new storage="room"]
+
+
+;名前 表示
+[talk_name val="？？？"]
+
+なんで……[l][r]
+なんで、こんなことになってしまったんだろう。[p]
+
+[wait time=1]
+
+;こはく 表示
+[show name=kohaku]
+
+;背景 表示
+[bg_show]
+
+;BGM 再生
+[playbgm storage="bgm_maoudamashii_acoustic31" vol="0.5"]
+
+私は『大鳥こはく』、高校2年の17歳。[p]
+
+;名前 表示
+[talk_name val="kohaku"]
+
+今日は休日を利用して、2人の友達と
+
+;背景 変更
+[bg_mod storage="mountain"]
+
+山で楽しいハイキング！[l][r]
+のはずだったんだけど……[p]
+
+お昼を過ぎた頃から、[r]
+
+;こはく 表情変化
+[chara_mod name="kohaku" face="surprised"]
+
+山全体が濃い霧
+
+;背景 変更
+[bg_mod storage="forest"]
+
+に覆われはじめて……[p]
+
+ふと目を離した隙に、[l][r]
+
+;こはく 非表示
+[hide name=kohaku]
+
+クラスメイトの『神林ゆうこ』ちゃん
+
+;ゆうこ 表示
+[show name=yuko]
+
+とはぐれちゃった。[l][r]
+
+;ゆうこ 表情変化
+[chara_mod name="yuko" face="worried"]
+
+;BGM 停止
+[stopbgm]
+
+……みたい。[p]
+
+;BGM 再生
+[playbgm storage="game_maoudamashii_6_dangeon20"]
+
+;ゆうこ 非表示
+[hide name=yuko]
+
+[wait time=0.5]
+
+私と『藤原みさき』ちゃん
+
+;みさき 表示
+[show name=misaki]
+
+の2人で、[r]
+
+;みさき 表情変化
+[chara_mod name="misaki" face="worried"]
+
+ゆうこちゃんを探したものの……[p]
+
+;みさき 非表示
+[hide name=misaki]
+
+;こはく 表示
+[show name="kohaku"]
+
+気付けば日が沈み
+
+;背景 変更
+[bg_mod storage="forest_night"]
+
+始めるし、[l][r]
+
+;こはく 表情変化
+[chara_mod name="kohaku" face="shock"]
+
+みさきちゃんが足をくじいちゃうしで、もう大変！[p]
+
+;BGM 停止
+[stopbgm]
+
+[wait time=0.5]
+
+本格的に夜になっちゃう前に、[r]
+
+;こはく 表情変化
+[chara_mod name="kohaku" face="serious"]
+
+ゆうこちゃんを見つけて帰らなきゃ……っ！[p]
+
+;SE 再生
+[playse storage="V0015"]
+
+
+;シーン 遷移
+[scene file="Field"]
+

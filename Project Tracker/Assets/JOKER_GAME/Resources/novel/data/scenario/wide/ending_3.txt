@@ -1,0 +1,239 @@
+*select_3
+
+
+;キャラクターの宣言
+[chara_new name="kohaku" jname="大鳥こはく" jcolor="#8697A7" storage="portrait_kohaku_B_01" scale="0.4" y="-2"]
+[chara_face name="kohaku" face="serious" storage="portrait_kohaku_B_03"]
+[chara_face name="kohaku" face="surprised" storage="portrait_kohaku_B_04"]
+[chara_face name="kohaku" face="shock" storage="portrait_kohaku_B_06"]
+
+[chara_new name="yuko" jname="神林ゆうこ" jcolor="#8E9B90" storage="portrait_yuko_B_01" scale="0.4" x="-2" y="-2"]
+[chara_face name="yuko" face="worried" storage="portrait_yuko_B_05"]
+
+[chara_new name="misaki" jname="藤原みさき" jcolor="#A38D8D" storage="portrait_misaki_B_01" scale="0.4" x="2" y="-2"]
+[chara_face name="misaki" face="worried" storage="portrait_misaki_B_05"]
+
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+……ああ。[r]
+
+[wait time="0.5"]
+
+感が良い娘は、嫌い……
+
+[wait time="1"]
+
+大嫌いだよ。[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+！！？？[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+そう、私こそが！[l][r]
+『幼女大好きおじさん』なのです！！[p]
+
+……みさきちゃんだっけ？[r]
+この娘は可愛かったけど、強く抵抗したからね。[p]
+
+おじさん、ちょっと怒っちゃったよね。[l][r]
+だから、この娘の体を乗っ取って憑いてきたんだ……[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+い、嫌……[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+もう遅い！[r]
+お前たち全員に、地獄の苦しみを味あわせてやる！！！！[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+た、助け……！！[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+……[l][r]
+な～んちゃって、嘘だよ☆[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+……え、本当？？[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+うん、冗談だよ。[l][r]
+ごめんね、何だか少し意地悪したくなっちゃって。[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+もう！やめてよ。[r]
+本当に怖かったんだから！！[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+ごめん、ごめん。[l][r]
+……でも、本当に彼は何だったのかしらね？[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+？？[p]
+
+;ゆうこ 非表示
+[hide name="yuko"]
+
+;こはく 非表示
+[hide name="kohaku"]
+
+;みさき 表示
+[show name="misaki" x="0"]
+
+;名前 表示
+[talk_name val="misaki"]
+
+……？？[l][r]
+だから、『幼女大好きおじさん』の話。[p]
+
+あれも、さっき私が思いついた嘘なの。[r]
+だから、あの人は一体……[p]
+
+;みさき 非表示
+[hide name="misaki"]
+
+;ゆうこ 表示
+[show name="yuko" x="-2.5"]
+
+;こはく 表示
+[show name="kohaku" x="2.5"]
+
+;名前 表示
+[talk_name val="ゆうこ＆こはく"]
+
+……え。[p]
+
+;名前 表示
+[talk_name val=""]
+
+～ Fin ～
+
+
+;シーン 遷移
+[scene file="GameClear"]
+
